@@ -40,7 +40,7 @@ String jsonValue = "";                      // Initialize string used for JSON P
 String humidity = "0";                      // Initialize humidity variable
 String temperature = "0";                   // Initialize temperature variable
 
-int tempCalibration = 0-4;                    // temperature calibration value
+int tempCalibration = -1;                   // temperature calibration value
 int prevTempF = 0;                          // last temperature value sent to the database
 int prevHumid = 0;                          // last humidity value sent to the database
 
@@ -190,8 +190,7 @@ void loop() {
       prevTempF = intTempF;
       delay(2000);                          // Delay x seconds before reading again
     }
-  }
-  else {
+  } else {
     // If an error connecting to DHT11 sensor, send error to Serial for debugging
     switch (chk)
     {
