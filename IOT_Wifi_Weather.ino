@@ -188,7 +188,7 @@ void loop() {
       httpRequest();
 
       prevTempF = intTempF;
-      delay(2000);                          // Delay x seconds before reading again
+      delay(60000);                          // Delay x milliseconds before reading again
     }
   } else {
     // If an error connecting to DHT11 sensor, send error to Serial for debugging
