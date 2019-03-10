@@ -3,12 +3,15 @@
 //  ie: myproject-12345.firebaseio.com:443
 //
 // Uses sensor DHT11
+//   +  <---> 5V
+//  out <---> D7
+//   -  <---> GND
 //
-// I2C Board to UNO connections
+// I2C Board to UNO WiFi Rev 2 connections
 //  GND <---> GND
 //  VCC <---> 5V
-//  SDA <---> A4
-//  SCL <---> A5
+//  SDA <---> SDA
+//  SCL <---> SCL
 
 // Include the library code
 #include <SPI.h>
